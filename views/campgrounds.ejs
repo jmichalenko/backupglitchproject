@@ -1,0 +1,16 @@
+<h1>
+  Yelp Campgrounds 
+</h1>
+<a href="/campgrounds/new">Add a New Campground</a>
+<div>
+  <a href="/">Go Back to Home Page</a>
+</div>
+<% campgrounds.forEach(function(campground){%>
+<div>
+<h4>
+    <%=campground.name%>
+</h4>
+  <img src="<%=campground.image%>">
+       </div>
+<% });%>
+
